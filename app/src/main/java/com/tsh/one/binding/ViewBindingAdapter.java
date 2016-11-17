@@ -1,6 +1,7 @@
 package com.tsh.one.binding;
 
 import android.databinding.BindingAdapter;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 
@@ -9,8 +10,13 @@ import android.widget.RadioGroup;
  */
 public class ViewBindingAdapter {
     @BindingAdapter("android:background")
-    public static void setBackground(ImageView iv, int resId) {
-        iv.setBackgroundResource(resId);
+    public static void setBackground(View v, int resId) {
+        v.setBackgroundResource(resId);
+    }
+
+    @BindingAdapter("android:background")
+    public static void setBackground(ImageView v, int resId) {
+        v.setBackgroundResource(resId);
     }
 
     @BindingAdapter("android:src")
@@ -18,7 +24,7 @@ public class ViewBindingAdapter {
         iv.setImageResource(resId);
     }
 
-    @BindingAdapter("app:onCheckedChange")
+    @BindingAdapter("onCheckedChange")
     public static void setOnCheckedChange(RadioGroup radioGroup, RadioGroup.OnCheckedChangeListener listener) {
         radioGroup.setOnCheckedChangeListener(listener);
     }

@@ -15,6 +15,7 @@
         android:orientation="vertical">
 
         <FrameLayout
+            android:id="@+id/fl_fragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
@@ -26,31 +27,36 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:checked="true"
+                android:id="@+id/rb_home"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/checked_home"
+                android:background="@{homeViewModel.homeResId}"
                 android:button="@null" />
 
             <RadioButton
+                android:id="@+id/rb_reading"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/checked_reading"
+                android:background="@{homeViewModel.readingResId}"
                 android:button="@null" />
 
             <RadioButton
+                android:id="@+id/rb_music"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/checked_music"
+                android:background="@{homeViewModel.musicResId}"
                 android:button="@null" />
 
             <RadioButton
+                android:id="@+id/rb_movie"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/checked_movie"
+                android:background="@{homeViewModel.movieResId}"
                 android:button="@null" />
         </RadioGroup>
     </LinearLayout>

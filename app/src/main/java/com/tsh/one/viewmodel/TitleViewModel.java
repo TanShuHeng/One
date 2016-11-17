@@ -1,9 +1,12 @@
 package com.tsh.one.viewmodel;
 
+import android.databinding.BaseObservable;
+import android.databinding.Bindable;
+
 /**
  * Created by captain on 16/11/17.
  */
-public class TitleViewModel {
+public class TitleViewModel extends BaseObservable{
     private String title;
     private int centerImg;
     private int leftImg;
@@ -26,6 +29,7 @@ public class TitleViewModel {
         this.title = title;
     }
 
+    @Bindable
     public int getCenterImg() {
         return centerImg;
     }
