@@ -12,6 +12,7 @@
     http://blog.csdn.net/u012702547/article/details/52077515
     http://www.jianshu.com/p/b1df61a4df77
     http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0603/2992.html
+    http://www.jianshu.com/p/b1df61a4df77
     
   Retrofit:
     https://realm.io/cn/news/droidcon-jake-wharton-simple-http-retrofit-2/
